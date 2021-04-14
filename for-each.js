@@ -44,6 +44,17 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    return [];
+    console.log(arr);
+    const newArr = [];
+
+    arr.forEach((booger2) => {
+        let es = { nombre: booger2.name, tipo: booger2.type };
+        newArr.push(es)
+
+
+
+    })
+    console.log(newArr);
+    return newArr;
 }
 
