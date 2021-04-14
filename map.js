@@ -19,12 +19,12 @@ Output:
 */
 
 export function makeArrayOfNamesWithMap(arr) {
-    return [];
+    return arr.map(booger => booger.name);
 }
 
 /*
 Output:
-
+ 
 [
     { name: 'spot', isHungry: true, type: 'dog' },
     { name: 'rover', isHungry: true, type: 'dog' },
@@ -33,12 +33,17 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    return [];
+    return arr.map(booger => {
+        return {
+            ...booger, isHungry: true
+        }
+    })
+
 }
 
 /*
 Output:
-
+ 
 [
     { name: 'SPOT', type: 'dog' },
     { name: 'ROVER', type: 'dog' },
@@ -47,23 +52,24 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    return [];
+    return arr.map(booger => ({ name: booger.name.toUpperCase(), type: booger.type }));
 }
 
 
 /*
-
+ 
 Output:
 ['spotdog', 'roverdog', 'jumpyfrog', einsteincat']
 */
 
 export function makeStringArray(arr) {
+
     return [];
 }
 
 /*
 Output:
-
+ 
 [
     [
         ['name', 'spot'], 
