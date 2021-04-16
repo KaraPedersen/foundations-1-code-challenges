@@ -64,7 +64,7 @@ Output:
 
 export function makeStringArray(arr) {
 
-    return arr.toString();
+
 }
 
 /*
@@ -90,5 +90,5 @@ Output:
 */
 
 export function makeArrayOfArraysOfArrays(arr) {
-    return [];
+
 }
