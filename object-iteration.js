@@ -36,7 +36,9 @@ etc
 */
 
 export function makeWeirdStringFromKeys(someObject) {
-    return '';
+
+    return Object.keys(someObject).join('');
+
 }
 
 

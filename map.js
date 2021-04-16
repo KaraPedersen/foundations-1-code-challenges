@@ -64,7 +64,7 @@ Output:
 
 export function makeStringArray(arr) {
 
-    return [];
+    return arr.toString();
 }
 
 /*
